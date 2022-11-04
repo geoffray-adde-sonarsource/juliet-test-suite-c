@@ -1,7 +1,7 @@
 #!/bin/bash
 export CMAKE_EXPORT_COMPILE_COMMANDS=1
 ./juliet.py --all --clean
-./juliet.py --all --configure
+./juliet.py --all --generate
 ./merge_compdb.sh
 sonar-scanner \
   -Dsonar.organization=geoffray-adde-sonarsource-github \
